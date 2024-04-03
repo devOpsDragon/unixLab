@@ -1,0 +1,30 @@
+#create a cpio file
+
+
+#extract a cpio file
+
+
+#creating tar using cpio
+
+
+#extract tar using cpio
+
+
+#To create a *.tar archive with selected files
+./sedfile.txt
+./output1.txt
+./ankit.txt
+./output2.txt
+./file3.txt
+./name.txt
+./output.txt
+
+
+#To only view *.tar archive file 
+./sedfile.txt
+./output1.txt
+./ankit.txt
+./output2.txt
+./file3.txt
+./name.txt
+./output.txt
