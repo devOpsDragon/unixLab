@@ -1,0 +1,135 @@
+student@da-HP-ProDesk-600-G4-MT:~/422101unix$ chmod -x com.sh
+student@da-HP-ProDesk-600-G4-MT:~/422101unix$ bash com.sh
+echo 10 + 5 | bc
+15
+
+comm file1.txt file2.txt
+422177
+422178
+422179
+422199
+533211
+563222
+	harsh
+comm: file 2 is not in sorted order
+	bhaskar
+	prince
+	dhruv 
+	jitu
+	ankit
+	shrinivas
+
+sudo chown student file1.txt
+[sudo] password for student: 
+
+sudo chgrp adm file1.txt
+
+dd if=file1.txt of=output_file.txt
+0+1 records in
+0+1 records out
+42 bytes copied, 7.2886e-05 s, 576 kB/s
+
+diff file1.txt file2.txt
+1,6c1,7
+< 422177
+< 422178
+< 422179
+< 422199
+< 533211
+< 563222
+---
+> harsh
+> bhaskar
+> prince
+> dhruv 
+> jitu
+> ankit
+> shrinivas
+
+finger student
+Login: student        			Name: student
+Directory: /home/student            	Shell: /bin/bash
+On since Mon Apr  1 11:48 (IST) on :0 from :0 (messages off)
+No mail.
+No Plan.
+
+find output_file.txt
+output_file.txt
+
+=============FILE LOCKING==============
+Enter locking Mode (R/W): 
+W
+Enter file path: 
+/home/student/422101unix/file1.sh
+Command to execute after locking: 
+lslocks
+COMMAND           PID  TYPE  SIZE MODE  M      START        END PATH
+firefox          3529 POSIX   34K WRITE 0 1073741826 1073742335 /home/student/.m
+java             4654 POSIX       WRITE 0          0          0 /home/student/ec
+java             4654 POSIX       WRITE 0          0          0 /home/student/ec
+firefox          3529 POSIX  424K WRITE 0 1073741826 1073742335 /home/student/.m
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+firefox          3529 POSIX  512K WRITE 0 1073741826 1073742335 /home/student/.m
+firefox          3529 POSIX  1.7M WRITE 0 1073741826 1073742335 /home/student/.m
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+mysqld           1106 POSIX       WRITE 0          0          0 /...
+firefox          3529 POSIX  110K WRITE 0 1073741826 1073742335 /home/student/.m
+flock            6650 FLOCK       WRITE 0          0          0 /home/student/42
+firefox          3529 POSIX       WRITE 0          0          0 /home/student/.m
+firefox          3529 POSIX    5M WRITE 0 1073741826 1073742335 /home/student/.m
+snapd             937 FLOCK       WRITE 0          0          0 /...
+whoopsie         1297 FLOCK       WRITE 0          0          0 /run/lock...
+nautilus         2134 POSIX   21M READ  0 1073741826 1073742335 /home/student/.c
+nautilus         2134 POSIX   32K READ  0        128        128 /home/student/.c
+java             4654 POSIX       WRITE 0          0          0 /home/student/ec
+firefox          3529 POSIX   48K WRITE 0 1073741826 1073742335 /home/student/.m
+update-notifier  3196 FLOCK       WRITE 0          0          0 /run/user/1001/u
+firefox          3529 POSIX  224K WRITE 0 1073741826 1073742335 /home/student/.m
+cron              905 FLOCK       WRITE 0          0          0 /run/snapd/ns...
+tracker-miner-f  1789 POSIX   21M READ  0 1073741826 1073742335 /home/student/.c
+tracker-miner-f  1789 POSIX   32K READ  0        128        128 /home/student/.c
+firefox          3529 POSIX   96K WRITE 0 1073741826 1073742335 /home/student/.m
+firefox          3529 POSIX   64K WRITE 0 1073741826 1073742335 /home/student/.m
+firefox          3529 POSIX  1.4M WRITE 0 1073741826 1073742335 /home/student/.m
+atd               944 POSIX       WRITE 0          0          0 /run/snapd/ns...
+thermald          940 POSIX       WRITE 0          0          0 /run/snapd/ns...
+firefox          3529 POSIX 13.2M WRITE 0 1073741826 1073742335 /home/student/.m
+ln -s file1.txt symbolic_link.txt
+ln file2.txt hard_link.txt
+
+lp file2.txt
+lp: Error - No default destination.
+
+lpstat -p
+printer Brother_DCP_B7535DW_series is idle.  enabled since Thursday 16 November 2023 12:03:36 AM
+printer Brother_DCP_B7535DW_series@BRNB422001E76C5.local is idle.  enabled since Monday 01 April 2024 10:16:44 AM
+printer Canon_iR2006_2206 is idle.  enabled since Tuesday 29 August 2023 02:22:27 PM
+printer Canon_iR2006_2206@Canon740ae5.local is idle.  enabled since Thursday 14 March 2024 02:09:37 PM
+printer Canon_iR2006_2206@Canon740b8d.local is idle.  enabled since Monday 01 April 2024 10:16:43 AM
+printer Canon_iR2006_2206_3_ is idle.  enabled since Tuesday 07 November 2023 11:32:21 AM
+printer Canon_iR2006_2206_4_ is idle.  enabled since Wednesday 15 November 2023 12:04:32 AM
+printer Canon_MF260 is idle.  enabled since Tuesday 14 June 2022 02:30:49 PM
+printer Canon_MF260_1_ is idle.  enabled since Monday 06 June 2022 03:06:09 PM
+printer Canon_MF260_1_@Canon8c1c0c.local is idle.  enabled since Wednesday 15 June 2022 02:06:11 PM
+printer jkmurthy_sos is idle.  enabled since Monday 01 April 2024 10:16:45 AM
+
+mesg y
+
+ftp vsftpd.com 
+ftp: connect to address 13.248.169.48: Connection timed out
+Trying 76.223.54.146...
+
